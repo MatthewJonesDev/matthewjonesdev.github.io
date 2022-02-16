@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='assets/css/main.css'>  
+    <script src="https://kit.fontawesome.com/5cc21462bf.js" crossorigin="anonymous"></script>
+    <title>Store Website</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <section class="top-head">
+            <h4>free shipping on orders £50+</h4>
+        </section>
+
+        <section class="bottom-head">
+            <div class="desktop-nav">
+                <nav>
+                    <div class="left">
+                        <a href="index.html">Home</a>
+                        <div class="products">
+                            <button class="product-btn">products</button>    
+                            <div class="product-content">
+                                <a href="tees.html">Tees</a>
+                                <a href="crewnecks.html">Crewnecks</a>
+                                <a href="hoodies.html">Hoodies</a>
+                            </div>
+                        </div>
+                        <a href="contactus.html">contact us</a>                                   
+                    </div>
+                    <div class="center">
+                        <h1>logo</h1>                               
+                    </div>
+                    <div class="right">
+                        <a id="search"><button onclick="searchBar()"><i class="fas fa-search"></i></button></a>
+                        <a id="basket-button"><button onclick="basket()"><i class="fas fa-shopping-bag"></i></button></a>                                  
+                    </div>
+                </nav>
+            </div>  
+            <div class="mobile-nav">
+                <button onclick="mobileNav()"><i class="fas fa-bars"></i></button> 
+            </div>       
+        </section>      
+    </header>
+
+    <!-- Header popout elements-->
+    <section>
+        <div id="search-bar">
+            <div id="search-bar-elements">
+                <i class="fas fa-search"></i><input type="text" placeholder="Search..."><i class="fas fa-times" onclick="searchBar()"></i> 
+            </div>
+        </div>
+    
+        <div id="basket">
+            <div id="basket-elements">
+                <div class="head">
+                    <h2>YOUR CART</h2>
+                    <i class="fas fa-times" onclick="basket()"></i>
+                </div>
+                <div class="main">
+                    <h5>your cart is empty</h5>
+                </div>     
+            </div>
+        </div>
+    
+        <div id="basket-background"></div> 
+        
+        <div id="mobile-nav">
+            <div id="mobile-nav-elements">
+                <div class="head">
+                    <i class="fas fa-times" onclick="mobileNav()"></i>
+                </div>
+                <div class="main">
+                    <nav>
+                        <a href="index.html">Home</a>
+                        <hr>
+                        <div class="products">
+                            <button class="product-btn" onclick="productBtn()">products</button><i id="fa-plus" class="fas fa-plus"></i><i id="fa-minus" class="fas fa-minus"></i>   
+                            <div id="product-content">
+                                <a href="tees.html"><h5>Tees</h5></a>
+                                <a href="crewnecks.html"><h5>Crewnecks</h5></a>
+                                <a href="hoodies.html"><h5>Hoodies</h5></a>
+                            </div>
+                        </div>
+                        <hr>
+                        <a href="contactus.html">contact us</a>
+                        <hr>
+                    </nav>
+                </div>     
+            </div>
+        </div>
+
+        <div id="mobile-nav-background"></div>
+    </section>
+
+    <!-- Main -->
+    <main>
+        <section class="top-image">  
+            <div class="image">
+                <img src="images/img1.jpg">
+                <div class="elements"> 
+                    <h1 class="replace-with-logo">logo</h1> 
+                    <h1>store name</h1> 
+                    <a href="#store">shop now</a>             
+                <div>
+            </div>                     
+        </section>
+        <section class="middle">  
+            <a name="store"></a>
+            <div class="store-top">
+                <h1>matthew jones store</h1>
+            </div>
+
+            <div class="store-middle">
+                <div class="images">
+                    <div class="image-container">
+                        <div class="image">
+                            <img id="img1" src="images/img2.jpg">
+                            <img id="img2" src="images/img3.jpg">                        
+                        </div>
+                        <div class="text">
+                            <h5>companyname&trade;</h5>
+                            <h4>Product Name</h4>
+                            <h5 class="grey">£30.00</h5>
+                        </div>
+                    </div>   
+                    <div class="image-container">
+                        <div class="image">
+                            <img id="img1" src="images/img4.jpg">
+                            <img id="img2" src="images/img5.jpg">                        
+                        </div>
+                        <div class="text">
+                            <h5>companyname&trade;</h5>
+                            <h4>Product Name</h4>
+                            <h5 class="grey">£30.00</h5>
+                        </div>
+                    </div>   
+                    <div class="image-container">
+                        <div class="image">
+                            <img id="img1" src="images/img6.jpg">
+                            <img id="img2" src="images/img7.jpg">                        
+                        </div>
+                        <div class="text">
+                            <h5>companyname&trade;</h5>
+                            <h4>Product Name</h4>
+                            <h5 class="grey">£30.00</h5>
+                        </div>
+                    </div>  
+                    <div class="image-container">
+                        <div class="image">
+                            <img id="img1" src="images/img8.jpg">
+                            <img id="img2" src="images/img9.jpg">                        
+                        </div>
+                        <div class="text">
+                            <h5>companyname&trade;</h5>
+                            <h4>Product Name</h4>
+                            <h5 class="grey">£30.00</h5>
+                        </div>
+                    </div> 
+                    <div class="image-container">
+                        <div class="image">
+                            <img id="img1" src="images/img2.jpg">
+                            <img id="img2" src="images/img3.jpg">                        
+                        </div>
+                        <div class="text">
+                            <h5>companyname&trade;</h5>
+                            <h4>Product Name</h4>
+                            <h5 class="grey">£30.00</h5>
+                        </div>
+                    </div> 
+                    <div class="image-container">
+                        <div class="image">
+                            <img id="img1" src="images/img4.jpg">
+                            <img id="img2" src="images/img5.jpg">                        
+                        </div>
+                        <div class="text">
+                            <h5>companyname&trade;</h5>
+                            <h4>Product Name</h4>
+                            <h5 class="grey">£30.00</h5>
+                        </div>
+                    </div>  
+                    <div class="image-container">
+                        <div class="image">
+                            <img id="img1" src="images/img6.jpg">
+                            <img id="img2" src="images/img7.jpg">                        
+                        </div>
+                        <div class="text">
+                            <h5>companyname&trade;</h5>
+                            <h4>Product Name</h4>
+                            <h5 class="grey">£30.00</h5>
+                        </div>
+                    </div> 
+                    <div class="image-container">
+                        <div class="image">
+                            <img id="img1" src="images/img8.jpg">
+                            <img id="img2" src="images/img9.jpg">                        
+                        </div>
+                        <div class="text">
+                            <h5>companyname&trade;</h5>
+                            <h4>Product Name</h4>
+                            <h5 class="grey">£30.00</h5>
+                        </div>
+                    </div> 
+                    <div class="image-container">
+                        <div class="image">
+                            <img id="img1" src="images/img2.jpg">
+                            <img id="img2" src="images/img3.jpg">                        
+                        </div>
+                        <div class="text">
+                            <h5>companyname&trade;</h5>
+                            <h4>Product Name</h4>
+                            <h5 class="grey">£30.00</h5>
+                        </div>
+                    </div>                      
+                </div>            
+            </div>                        
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <section class="footer-top">
+            <div class="info">
+                <div class="container">
+                    <h4>companyname</h4>
+                    <h5>Lorem ipsum dolor sit amet consectetur</h5>
+                    <div class="icons">
+                        <a href="#twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#facebook"><i class="fab fa-facebook-f"></i></a>              
+                    </div>             
+                </div>
+            </div>
+            <div class="help">
+                <div class="container">
+                    <h4>help</h4>
+                    <a href="#"><h5>faqs</h5></a>
+                    <a href="#"><h5>contact</h5></a>
+                    <a href="#"><h5>shipping & returns</h5></a>         
+                </div>
+            </div>
+            <div class="links">
+                <div class="container">
+                    <h4>links</h4>
+                    <a href="#"><h5>terms of service</h5></a> 
+                    <a href="#"><h5>privacy policy</h5></a>          
+                </div>
+            </div>          
+        </section>
+        <section class="footer-bottom">
+            <h5>&#169;Matthew Jones</h5>
+        </section>
+    </footer>
+
+    
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/intersection-observer.js"></script>
+
+</body>
+</html>

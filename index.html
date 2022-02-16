@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='assets/css/main.css'>  
+    <script src="https://kit.fontawesome.com/5cc21462bf.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo"><img src="images/logo2.png"></div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+          <ul>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#aboutme">About</a></li>
+            <li><a href="#contactdetails">Contact</a></li>
+            <li id="sun"><button onclick="myFunction()"><i class="far fa-sun"></i></button></li>
+            <li id="moon"><button onclick="myFunction()"><i class="far fa-moon"></i></button></li>
+            
+          </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+    </header>
+
+    <main>
+
+        <section class="page-top">
+            <div class="container">
+                <div class="page-top-image">
+                    <img src="images/logo.png">
+                </div>
+                <div class="top-text">
+                    <h2 id="top">Hi I'm Matthew Jones</h2>
+                    <p>I'm a frontend web developer based in Wales.</p> 
+                </div>
+            </div>
+        </section>
+
+        <a name="projects"></a>
+        <section class="project-section">
+            <div class="container">           
+                <h1>projects</h1>
+                <div  class="projects show-on-scroll">
+                    <div class="project-info">
+                        <h2>project 1</h2>
+                        <a href="puresitetemplate/index.html" class="image" target="_blank"><img src="images/project1img.jpg" alt=""></a>
+                        <p>Project 1 is a website template I created called Pure. It has a responsive design meaning it will fit any screen size. There are 5 pages on the website, the first has interactive images, the next 3 are basic image and text pages and the last page has a range of different elements to chose from so the user can design the website however they like.</p>
+                        <a class="button" target="_blank" href="puresitetemplate" download="puresitetemplatecode">project 1 code</a>
+                    </div>
+                    <div class="project-info">
+                        <h2>project 2</h2>
+                        <a href="topbites/index.html" class="image" target="_blank"><img src="images/project2img.jpg" alt=""></a>
+                        <p class="top">Project 2 is a design I made for a resteraunt website. It has a nav bar, interactive buttons and a contact form at the bottom of the page. It is also a responsive design so it can fit any screen sizes.</p>
+                        <a class="button" target="_blank" href="topbites" download="topbitescode">project 2 code</a>                   
+                    </div> 
+                    <div class="project-info">
+                        <h2>Project 3</h2>
+                        <a href="storewebsite/index.html" class="image" target="_blank"><img src="images/project3img.jpg" alt=""></a>
+                        <p class="top">My 3rd project was a store design template with 5 pages, a home page, contact page and 3 other pages that you can put specific items from the store onto. It has an animated basket popout, search dropdown and an animated mobile nav bar for smaller screen sizes. It has hover affects for the images which change to a different view of the product and hover affects on the nav bar icons and text.</p>
+                        <a class="button" target="_blank" href="storewebsite" download="storewebsitecode">project 3 code</a>                   
+                    </div>  
+                </div>
+            </div>
+        </section>
+
+        <a name="aboutme"></a>
+        <section class="about-me-section">
+            <h1>About me</h1>
+            <div class="container"> 
+                <div class="about-me-text show-on-scroll">
+                    <p>Hi, I'm Matthew Jones - a  junior frontend web developer based in Swansea, Wales. I have been doing web development for about a year, I first started when I was in college and then once I left I furthered my knowlege by doing online courses and watching lots of tutorials. I have a good understanding of HTML, CSS and Java Script and would be happy to learn anything to improve on my skillset.</p>
+                    <p>I enjoy web development because no matter how much you learn, there are always be more problems to solve. Ever since I started producing websites I have strived to make the code and design of the websites i create as neat, tidy and fluent as possible.</p>
+                    <p>When I'm not coding, I enjoy watching and playing football or playing video games with my mates.</p>
+                </div> 
+                <div class="slideshow show-on-scroll">
+                    <div class="imgs">
+                        <div class="mySlides fade">
+                            <a href="https://www.codecademy.com/profiles/Matthew_Jones/certificates/9eb0741e5ebef1f9f58a53bfac67d3a7" target="_blank"><img src="images/HTML.jpg"></a>
+                        </div>
+                        <div class="mySlides fade">
+                            <a href="https://www.codecademy.com/profiles/Matthew_Jones/certificates/9a5bb1fc45b4281af1fffec93b0aaf05" target="_blank"><img src="images/CSS.jpg"></a>
+                        </div>
+                        <div class="mySlides fade">
+                            <a href="https://www.codecademy.com/profiles/Matthew_Jones/certificates/705dcb15de0da4dd9d9fc4f3274b430e" target="_blank"><img src="images/JS.jpg"></a>
+                        </div>
+                        
+                        <a id="prev" class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>                 
+                    </div>
+    
+                    <div class="btns"style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>               
+                </div>          
+            </div>
+        </section>
+
+        <a name="contactdetails"></a>
+        <section class="details-section">
+            <div class="container">
+                <h1 class="main">contact details</h1> 
+                <div class="details">
+                    <div class="email">
+                        <p>email</p>
+                        <p class="right">mattjones.dev1@gmail.com</p>
+                    </div>                                          
+                </div>
+
+                <div class="details">
+                    <div class="phone">
+                        <p>phone</p>
+                        <p class="right">+44 7548 667309</p>
+                    </div>
+                </div>
+
+                <div class="details">
+                    <div class="social">
+                        <p>social</p>
+                        <div class="social-icons">
+                            <a href="https://twitter.com/MatthewJonesDev" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                            <a href="https://www.linkedin.com/in/matthew-jones-371824230" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/MatthewJonesDev" target="_blank"><i class="fab fa-github-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="https://formsubmit.co/mattjones.dev1@gmail.com" method="POST" target="_blank">
+                    <h2>Contact Form</h2>
+                    <input class="full-name" type="text" name="Name" placeholder="Full Name" required>
+                    <input class="email" type="email" name="Email" placeholder="Email address" required>
+                    <textarea class="message" type="text" name="Message" placeholder="Message" required></textarea>
+                    <button class="button" type="submit">Send</button>
+               </form>                      
+            </div>
+        </section>
+
+    </main>
+
+    <footer><h3>© 2021-2022, Matthew Jones</h3></footer>
+    
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/intersection-observer.js"></script>
+
+</body>
+</html>
